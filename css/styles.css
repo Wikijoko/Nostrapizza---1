@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+    background-image: url(../img/fondo.png);
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------Header--------*/
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    position: relative
+    margin: auto;
+    background-image: url(../img/Logo-Nostra-Pizza.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 65%;
+    height: 80%;
+}
+
+.linea-logo {
+    width: 100%;
+    height: 25%;
+    background-color: gray;
+    opacity: 0.15;
+    position: relative;
+    top: 55%;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    position:absolute;
+}
+.barras {
+    background-image: url(../img/barras.png.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 20%;
+    bottom: 20%;
+    position: relative;
+}
+.delivery-box {
+    width: 45px;
+    height: 45px;
+    background-color: lightgray;
+    border-radius: 20%;
+    right: 3%;
+    position: fixed;
+    top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery {
+    background-image: url(../img/delivery.png);
+    background-position: center;
+    background-size: contain;  
+    background-repeat: no-repeat;
+    width: 65%;
+    height: 70%;
+}
+.menu-container {
+    width: 100%;
+    height: 600px;
+    display: block;
+    justify-content: space-between;
+}
+.entradas {
+    width: 80%;
+    height: 100px;
+    background-image: url(../img/entradas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.saladas {
+    width: 80%;
+    height: 100px;
+    background-image: url(../img/saladas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pizzas {
+    width: 80%;
+    height: 100px;
+    background-image: url(../img/pizza.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sobremesas {
+    width: 80%;
+    height: 100px;
+    background-image: url(../img/sobremesas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bebidas {
+    width: 80%;
+    height: 100px;
+    background-image: url(../img/bebidas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-box{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.phone {
+    width: 50%;
+    height: 50%;
+    background-image: url(../img/phone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.number {
+    font-family: "Quicksand_Bold";
+    letter-spacing: 2px;
+    white-space: nowrap;
+
+}

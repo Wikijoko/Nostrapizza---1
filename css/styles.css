@@ -149,7 +149,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    
+    border-radius: 20px;
 }
 
 .saladas {
@@ -164,7 +164,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    border-radius: 20px;
 }
 
 .pizzas {
@@ -179,6 +179,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 .sobremesas {
     width: 90%;
@@ -192,7 +193,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 20px;
 }
 .bebidas {
     width: 90%;
@@ -206,7 +207,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-radius: 20px;
 }
 .footer {
     width: 100%;
@@ -218,12 +219,15 @@ body {
     justify-content: center;
     position: fixed;
     bottom: 0%;
+    
 }
 .footer-box{
     width: 50%;
     height: 40px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 .phone {
     width: 50%;

@@ -263,7 +263,9 @@ body {
     width: 73%;
     height: 100%;
     display: grid;
-    align-content: center;
+    align-content: baseline;
+    top: 15%;
+    position: relative;
 }
 .item1tittle-price{
     display: flex;

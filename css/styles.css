@@ -305,6 +305,9 @@ body {
 	top: 15%;
 	align-items: baseline;
 }
+.price1 {
+	margin-bottom: 10px;
+}
 .textprice {
 	font-size: 0.8em;
 }

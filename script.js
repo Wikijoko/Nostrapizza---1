@@ -69,10 +69,6 @@ let volvervinos = document.querySelector(".vinosvolver")
     menupizzas.style.display="none"
     menu.style.display="block"
     })
-    volverextras.addEventListener('click', () => {
-    menuextras.style.display="none"
-    menu.style.display="block"
-    })
     volversobremesas.addEventListener('click', () => {
     menusobremesas.style.display="none"
     menu.style.display="block"

@@ -61,7 +61,8 @@ body {
     width: 15%;
     height: 20%;
     bottom: 20%;
-    position: relative;
+	position: relative;
+	display: none;
 }
 .delivery-container {
     width: 12%;

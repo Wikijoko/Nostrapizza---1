@@ -1,5 +1,5 @@
 let delivery1 = document.querySelector(".delivery-container");
-let deliveryboton = document.querySelector(".delivery-box");
+let deliveryboton = document.querySelector(".delivery");
 let entradas = document.querySelector(".entradas");
 let saladas = document.querySelector(".saladas");
 let pizzas = document.querySelector(".pizzas");

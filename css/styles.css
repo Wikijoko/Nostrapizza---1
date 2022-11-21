@@ -25,6 +25,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.nav-container.navact{
+	height: 140px;
+}
 .logo {
 	position: relative;
     margin: auto;
@@ -138,11 +141,11 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 10px;
 }
 .delivery {
-    background-image: url(../img/Recurso\ 31.png);
+    background-image: url(../img/Recurso\ 33.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 23%;
+    width: 24%;
     height: 55%;
     right: 0%;
     position: absolute;
@@ -1262,7 +1265,7 @@ body {
 .vinos {
     width: 90%;
     height: 130px;
-    background-image: url(../img/Recurso\ 28.png);
+    background-image: url(../img/Recurso\ 32.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

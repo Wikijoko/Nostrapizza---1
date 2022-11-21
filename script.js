@@ -1,5 +1,6 @@
 let delivery1 = document.querySelector(".delivery-container");
 let deliveryboton = document.querySelector(".delivery");
+let nav = document.querySelector(".nav-container");
 let entradas = document.querySelector(".entradas");
 let saladas = document.querySelector(".saladas");
 let pizzas = document.querySelector(".pizzas");
@@ -30,14 +31,17 @@ let volvervinos = document.querySelector(".vinosvolver")
 
     entradas.addEventListener('click', () => {
     menu.style.display="none";
+    nav.style.height="140px";
     menuentradas.style.display="block";
     })
     saladas.addEventListener('click', () => {
     menu.style.display="none";
+    nav.style.height="140px";
     menusaladas.style.display="block";
     })
     pizzas.addEventListener('click', () => {
     menu.style.display="none";
+    nav.style.height="140px";
     menupizzas.style.display="block"
     })
     extras.addEventListener('click', () => {
@@ -47,37 +51,46 @@ let volvervinos = document.querySelector(".vinosvolver")
     })    
     sobremesas.addEventListener('click', () =>{
     menu.style.display="none";
+    nav.style.height="140px";
     menusobremesas.style.display="block";
     })
     bebidas.addEventListener('click', () =>{
     menu.style.display="none";
+    nav.style.height="140px";
     menubebidas.style.display="block";
     })
     vinos.addEventListener('click', () =>{
     menu.style.display="none";
+    nav.style.height="140px";
     menuvinos.style.display="block";
      })
     volverentradas.addEventListener('click', () => {
     menuentradas.style.display="none";
+    nav.style.height="200px";
     menu.style.display="block";
     })
     volversaladas.addEventListener('click', () => {
     menusaladas.style.display="none"
+    nav.style.height="200px";
     menu.style.display="block"
     })
     volverpizzas.addEventListener('click', () => {
     menupizzas.style.display="none"
+    nav.style.height="200px";
     menu.style.display="block"
     })
     volversobremesas.addEventListener('click', () => {
     menusobremesas.style.display="none"
+    nav.style.height="200px";
     menu.style.display="block"
     })
     volverbebidas.addEventListener('click', () => {
     menubebidas.style.display="none"
+    nav.style.height="200px";
     menu.style.display="block"
     })
     volvervinos.addEventListener('click', () => {
     menuvinos.style.display="none"
+    nav.style.height="200px";
     menu.style.display="block"
     })

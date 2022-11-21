@@ -376,7 +376,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -393,7 +393,7 @@ body {
 }
 .item1text{
     font-family: "quicksand_light";
-    font-size: 0.7em;
+    font-size: 0.78em;
     position: relative;
     width: 90%;
     height: 60%;

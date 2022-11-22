@@ -580,7 +580,7 @@ body {
 }
 .saladasbox {
 	width: 90%;
-	height: 5%;
+	height: 4%;
 	background-image: url(../img/Salada\ Nostra.jpg);
 	background-size: cover;
 	background-position: center;
@@ -683,7 +683,7 @@ body {
 }
 .pizzasbox {
 	width: 90%;
-	height: 5%;
+	height: 4%;
 	background-image: url(../img/DOP.jpg);
 	background-size: cover;
 	background-position: center;
@@ -932,7 +932,7 @@ body {
     justify-content: center;
     top: 7%;
 	z-index: 1;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 .itemextra.margin{
 	margin-bottom: 10px;
@@ -991,7 +991,7 @@ body {
 }
 .sobremesasbox {
 	width: 90%;
-	height: 5%;
+	height: 4%;
 	background-image: url(../img/Tiramisu.jpg);
 	background-size: cover;
 	background-position: center;
@@ -1084,7 +1084,7 @@ body {
 }
 .bebidasbox {
 	width: 90%;
-	height: 5%;
+	height: 4%;
 	background-image: url(../img/bebidas1.jpg);
 	background-size: cover;
 	background-position: center;
@@ -1298,10 +1298,10 @@ body {
 }
 .vinosbox {
 	width: 90%;
-	height: 5%;
-	background-image: url(../img/nostropane.jpg);
+	height: 4%;
+	background-image: url(../img/image1.jpeg);
 	background-size: cover;
-	background-position: center;
+	background-position: 50% 25%;
 	margin: auto;
 	display: flex;
 	justify-content:space-between;

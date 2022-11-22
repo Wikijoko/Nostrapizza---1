@@ -7,7 +7,7 @@ html {
 	height: 100%;
 }
 body {
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/Recurso\ 30.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -182,7 +182,7 @@ body {
 }
 .entradasbox {
 	width: 90%;
-    height: 5%;
+    height: 4%;
     background-image: url(../img/nostropane.jpg);
     background-size: cover;
     background-position: center;
@@ -242,13 +242,13 @@ body {
 	height: 120px;
 	background-color: white;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 65px;
 	box-shadow: rgba(0,0,0,0.2) 6px 5px 10px 1px;
 	display: flex;
 	align-items: center;
     position: relative;
     justify-content:space-between;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 .item3box {
 	width: 90%;
@@ -275,7 +275,7 @@ body {
     position: relative;
     justify-content:space-between;
 	top:7%;
-	margin-bottom: 150px;
+	margin-bottom: 80px;
 }
 .item5box {
 	width: 90%;
@@ -302,7 +302,7 @@ body {
     position: relative;
     justify-content:space-between;
 	top:7%;
-	margin-bottom: 150px;
+	margin-bottom: 80px;
 }
 .item1imgbox{
     width: 30%;
@@ -325,7 +325,7 @@ body {
 .item1tittle {
     position: relative;
     font-family: "quicksand_bold";
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 5px;
     text-transform: uppercase;
 }
@@ -381,6 +381,8 @@ body {
     height: 100%;
     align-items: baseline;
     justify-content: space-between;
+	position: relative;
+	top: -15%;
 }
 .item2tittle-price{
     display: flex;
@@ -403,20 +405,20 @@ body {
 }
 .item1text{
     font-family: "quicksand_light";
-    font-size: 0.78em;
+    font-size: 0.7em;
     position: relative;
     width: 90%;
     height: 60%;
-    overflow-wrap: anywhere;
     margin-top: 5px;
     margin-left: 5px;
+	top: 0%;
 }
 .Nostropane{
-    font-family: "quicksand_light";
+	font-family: "quicksand_light";
     font-size: 0.7em;
-    position: relative;
-    width: 47%;
-    height: 65%;
+    position: absolute;
+    width: 50%;
+    height: 10%;
     overflow-wrap: anywhere;
     margin-top: 5px;
     margin-left: 5px;
@@ -425,6 +427,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 27%;
+}
+.Nostropane2{
+	font-family: "quicksand_light";
+    font-size: 0.7em;
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    overflow-wrap: anywhere;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: rgba(97,97,97,0.3);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 23%;
 }
 .item2img {
 	background-image: url(../img/Focaccia.jpg);
@@ -1410,11 +1429,25 @@ body {
     letter-spacing: 2px;
     white-space: nowrap;
 }
+.location {
+	background-image: url(../img/ubicacion.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    left: 3%;
+    bottom: 17%;
+}
 @media (max-height:800px) {
 	.item2box {
-		margin-bottom: 130px;
+		margin-bottom: 80px;
 	}
 	.vinos {
 		margin-bottom: 100px;
+	}
+	item6box{
+		margin-bottom: 90px;
 	}
 }

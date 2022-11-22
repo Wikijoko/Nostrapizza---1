@@ -1424,11 +1424,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+	display: none;
 }
 .number {
     font-family: "Quicksand_Bold";
     letter-spacing: 2px;
     white-space: nowrap;
+	display: none;
 }
 .location {
 	background-image: url(../img/ubicacion.png);

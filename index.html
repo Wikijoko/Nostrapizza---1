@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Nostra Pizza</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" href="./img/Logo-N.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<style type="text/css">
 		@font-face {
 	font-family: "Quicksand_Bold";
@@ -16,9 +17,20 @@
 	font-family: "Quicksand_Light";
 	src: url(font/Quicksand_Light.otf);
 }
+        @font-face{
+    font-family: "Quicksand_Book";
+    src: url(font/Quicksand_Book.otf)
+}
 	</style>
 </head>
 <body>
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" class="botoncerrar">X</label>
+    <div class="modal">
+        <div class="publicidad">
+            
+        </div>
+    </div>
     <nav>
         <div class="botones">
             <div class="barras">
@@ -39,14 +51,39 @@
             </div>       
         </div>
         <div class="nav-container">
-            <div class="logo"> 
+        <nav class="navegador">
+            <div class="logo"> <img src="./img/Logo-Nostra-Pizza.png" class="imagen-logo">
                 <div class="linea-logo">
 
                 </div>
             </div>
+            <ul class="menu-nav">
+                <li><a class="home">Home</a></li>
+                <li><a id="menuN">Menu</a></li>
+                <li><a id="galeriaN"">Galeria</a></li>
+                <li><a id="contactoN">Contacto</a></li>
+                <li><a href=""><img src="./img/instagram.png" class="instagram-li"></a></li>
+            </ul>
+        </nav>
         </div>
     </nav>
+    <div class="home-img"></div>
+    <div class="menu-desk">
+        <ul class="lista-menu">
+        <li class="especiais-desk">Especiais</li>
+        <li class="entradas-desk">Entradas</li>
+        <li class="saladas-desk">Saladas</li>
+        <li class="pizzas-desk">Pizzas</li>
+        <li class="extras-desk">Extras</li>
+        <li class="sobremesas-desk">Sobremesas</li>
+        <li class="bebidas-desk">Bebidas</li>
+        <li class="vinos-desk">Vinos</li>
+        </ul>
+    </div>
     <div class="menu-container">
+        <div class="especiales">
+            
+        </div>
         <div class="entradas">
             <div class="entradas-text"> </div>
         </div>
@@ -63,15 +100,61 @@
         <div class="vinos">
         </div>
     </div>
-    <div class="footer">
-        <a class="location" href="https://www.google.com/maps/place/38.76120179999999,-9.1644765"></a>
-        <a class="footer-box" href="tel:+351211646734">
-            <div class="phone">
-
-            </div>
-            <div class="number" href="tel:+351211646734">+351-21-164-6734</div>
-        </a>
+    <div class="popup">
+        <div class="phone"></div>
+    <a class="number" href="tel:211646734">
+        211646734
+    </a>
+        <div class="numbertext">Chamada para rede fixa nacional<br>De Terça -feira ao Domingo<br>Das 12hs às 15hs e das 18hs às 10hs</div>
     </div>
+    <div class="footer">
+        <a class="location" target="_blank" href="https://www.google.com/maps/place/38.76120179999999,-9.1644765"></a>
+        <div class="footer-box">
+            <div class="arrowF"></div>
+         </div>
+    <a class="instagram" target="_blank" href="https://www.instagram.com/nostrapizza.pt/"></a>
+    </div>
+
+<!-------------------Especiales------------------->
+<div class="ful-Img" id="fullImgBox">
+    <img src="./img/saladaespecial.jpg" id="fullImg" alt="">
+    <span onclick="CloseImg()">X</span>
+</div>
+
+    <div class="especialesmenu">
+        <div class="especialesbox">
+        <div class="entradastitulo">Especiais</div>
+        <div class="especialesvolver"></div>
+        <div class="entradasfiltro"></div>
+        </div>
+        <div class="item1box">
+            <div class="item1imgbox">
+                <div class="item60img"><img src="./img/saladaespecial.jpg" onclick="openImg(this.src)"></div>
+            </div>
+            <div class="item1tittle-text">
+                <div class="item1tittle-price">
+                    <div class="item1tittle" onclick="openText(this)">Salada</div>
+                    <div class="item1price">8.20€</div>
+                </div>
+                <p class="item1text">mistura de alface, queijo feta, tomate cherry, cebola roxa marinada, pão fatiado acompanhado com molho pesto</p>
+            </div>
+        </div>
+        <div class="item3box">
+            <div class="item1imgbox">
+                <div class="item60img"> <img src="./img/pizzaespecial.jpg" onclick="openImg(this.src)"> </div>
+            </div>
+            <div class="item2tittle-text">
+                <div class="item1tittle-price">
+                    <div class="item1tittle" onclick="openText(this)">Pizza/Pinsa do Mes</div>
+                </div>
+                <p class="item1text">mozzarella, queijo de cabra, curgete, molho pesto, oregãos e majericão</p>
+            </div>
+            <div class="price">
+                <div class="item1price"><p class="price1">13.90€ </p><p class="textprice"> Clássica</p> <br><p class="price1">14.90€</p> <p class="textprice">Romana</p></div>
+            </div>
+        </div>
+    </div>
+<!-----------Entradas-------------->
 	<div class="entradasmenu">
 	<div class="entradasbox">
 	<div class="entradastitulo">Entradas</div>
@@ -80,7 +163,7 @@
 	</div>
 	<div class="item1box">
         <div class="item1imgbox">
-            <div class="item1img"></div>
+            <div class="item60img"> <img src="./img/nostropane.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -92,7 +175,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item2img"></div>
+            <div class="item60img"><img src="./img/Focaccia.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -104,7 +187,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item3img"></div>
+            <div class="item60img"><img src="./img/Carpaccio de Bresaola.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -116,7 +199,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item4img"></div>
+            <div class="item60img"><img src="./img/Burrata com Espargos.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -128,7 +211,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item5img"></div>
+            <div class="item60img"><img src="./img/Bruschetta di Pomodori.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -140,7 +223,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item6img"></div>
+            <div class="item60img"><img src="./img/Provolone Al Forno.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -152,7 +235,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item7img"></div>
+            <div class="item60img"><img src="./img/Crostini di Presunto.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -164,7 +247,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item8img"></div>
+            <div class="item60img"><img src="./img/Involtini Di Zuchini.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -176,7 +259,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item9img"></div>
+            <div class="item60img"><img src="./img/Crostino di Salame.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -188,7 +271,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item10img"></div>
+            <div class="item60img"><img src="./img/Alla Marianara.JPG" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -200,7 +283,7 @@
     </div>
     <div class="item2box">
         <div class="item1imgbox">
-            <div class="item11img"></div>
+            <div class="item60img"><img src="./img/Lasagna Di Carne.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -220,7 +303,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item12img"></div>
+                <div class="item60img"><img src="./img/Salada Nostra.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -232,7 +315,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item13img"></div>
+                <div class="item60img"><img src="./img/Cesare.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -245,7 +328,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item14img"></div>
+                <div class="item60img"><img src="./img/Salada Dolce Capra.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -257,7 +340,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item15img"></div>
+                <div class="item60img"><img src="./img/Salada Rucola alla Pera.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -270,7 +353,7 @@
         </div>
         <div class="item2box">
             <div class="item1imgbox">
-                <div class="item16img"></div>
+                <div class="item60img"><img src="./img/Caprese e Pesto.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -291,7 +374,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item17img"></div>
+                <div class="item60img"><img src="./img/Margherita.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -305,7 +388,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item18img"></div>
+                <div class="item60img"><img src="./img/DOP.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -319,7 +402,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item19img"></div>
+                <div class="item60img"><img src="./img/Prosciutto.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -333,7 +416,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item20img"></div>
+                <div class="item60img"><img src="./img/Prosciutto e Funghi.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -347,7 +430,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item21img"></div>
+                <div class="item60img"><img src="./img/Viva Il Formaggio.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -361,7 +444,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item22img"></div>
+                <div class="item60img"><img src="./img/Pizza Bufala.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -375,7 +458,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item23img"></div>
+                <div class="item60img"><img src="./img/Linferno.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -389,7 +472,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item24img"></div>
+                <div class="item60img"><img src="./img/Capricciosa.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -403,7 +486,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item99img"></div>
+                <div class="item60img"><img src="./img/Amatriciana.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -417,7 +500,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item25img"></div>
+                <div class="item60img"><img src="./img/4 Stagioni.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -431,7 +514,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item26img"></div>
+                <div class="item60img"><img src="./img/Nostra.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -445,7 +528,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item27img"></div>
+                <div class="item60img"><img src="./img/Cuoco Loco.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -459,7 +542,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item28img"></div>
+                <div class="item60img"><img src="./img/Vegi Vita.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -473,7 +556,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item29img"></div>
+                <div class="item60img"><img src="./img/Italia.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -487,7 +570,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item30img"></div>
+                <div class="item60img"><img src="./img/Ventricina.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -501,7 +584,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item31img"></div>
+                <div class="item60img"><img src="./img/Green Card.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -515,7 +598,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item32img"></div>
+                <div class="item60img"><img src="./img/Dolce Capra.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -529,7 +612,7 @@
         </div>
         <div class="item3box">
             <div class="item1imgbox">
-                <div class="item33img"></div>
+                <div class="item60img"><img src="./img/Calzone.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item2tittle-text">
                 <div class="item1tittle-price">
@@ -1057,7 +1140,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item34img"></div>
+                <div class="item60img"><img src="./img/Tiramisu.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1069,7 +1152,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item35img"></div>
+                <div class="item60img"><img src="./img/Torta al Cioccolato.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1081,7 +1164,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item37img"></div>
+                <div class="item60img"><img src="./img/Pizza Mela e Canella.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1093,7 +1176,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item36img"></div>
+                <div class="item60img"><img src="./img/Pizza di Nutella.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1129,7 +1212,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item38img"></div>
+                <div class="item60img"><img src="./img/Agua Penacova.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1141,7 +1224,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item40img"></div>
+                <div class="item60img"><img src="./img/Aguas das Pedras.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1153,7 +1236,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item41img"></div>
+                <div class="item60img"><img src="./img/Sumo Compal Laranja.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1165,7 +1248,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item42img"></div>
+                <div class="item60img"><img src="./img/Sumo Compal Pessego.png" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1177,7 +1260,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item43img"></div>
+                <div class="item60img"><img src="./img/Coca Cola.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1189,7 +1272,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item44img"></div>
+                <div class="item60img"><img src="./img/Coca Cola Zero.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1201,7 +1284,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item45img"></div>
+                <div class="item60img"><img src="./img/Coca Cola Light.png" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1213,7 +1296,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item52img"></div>
+                <div class="item60img"><img src="./img/Fanta Laranja.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1225,7 +1308,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item46img"></div>
+                <div class="item60img"><img src="./img/7up.png" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1237,7 +1320,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item47img"></div>
+                <div class="item60img"><img src="./img/Ice Tea Limao.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1249,7 +1332,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item48img"></div>
+                <div class="item60img"><img src="./img/Ide Tea Pêssego.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1261,7 +1344,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item49img"></div>
+                <div class="item60img"><img src="./img/Birra Peroni.jpg" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1273,7 +1356,7 @@
         </div>
         <div class="item1box">
             <div class="item1imgbox">
-                <div class="item50img"></div>
+                <div class="item60img"><img src="./img/Birra Moretti.png" onclick="openImg(this.src)"></div>
             </div>
             <div class="item1tittle-text">
                 <div class="item1tittle-price">
@@ -1357,7 +1440,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item53img"></div>
+            <div class="item60img"><img src="./img/Vinho Esteva.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1368,7 +1451,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item54img"></div>
+            <div class="item60img"><img src="./img/Lambrusco Rosato.png" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1379,7 +1462,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item55img"></div>
+            <div class="item60img"><img src="./img/Vinho Borgobruno.png" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1390,7 +1473,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item56img"></div>
+            <div class="item60img"><img src="./img/Vinho Branco Bo.PNG" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1401,7 +1484,7 @@
     </div>
     <div class="item1box">
         <div class="item1imgbox">
-            <div class="item57img"></div>
+            <div class="item60img"><img src="./img/Vinho Tinto - Quinta das Camelias.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1412,7 +1495,7 @@
     </div>
     <div class="item2box">
         <div class="item1imgbox">
-            <div class="item58img"></div>
+            <div class="item60img"><img src="./img/vinho chianti.jpg" onclick="openImg(this.src)"></div>
         </div>
         <div class="item1tittle-text">
             <div class="item1tittle-price">
@@ -1422,6 +1505,20 @@
         </div>
     </div>
 </div>
-    <script src="./script.js"></script>
+<div class="galeria"><h1>Galeria</h1></div>
+<div class="galeriaIg"><div class="embedsocial-hashtag" data-ref="1d4d9b89fd445ab3751ac4ee8b48f6a3e26b05e5"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial<span>→</span> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script></div>
+<div class="footerD">
+    <h1>Contacto</h1>
+    <div class="footerDml">
+    <div class="googlemapsD"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.108910503385!2d-9.166665184723149!3d38.761205962565676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ed0b433aa39c51f!2zMzjCsDQ1JzQwLjMiTiA5wrAwOSc1Mi4xIlc!5e0!3m2!1sen!2sus!4v1672869741751!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="footerDinfo">
+        <div class="numeroDc"><img src="./img/phone.png"><div class="NumeroD">Telef <br> <a>211646734</a></div></div>
+        <div class="localizacion"></div>
+        <div class="horario"><img src="./img/reloj.jpg"> <p>terça-feira ao Domindo
+            Das 12hs às 15hs e das 18hs às 10hs</p></div>
+        </div>
+    </div>
+</div> 
+<script src="./js/script.js"></script>
 </body>
 </html>

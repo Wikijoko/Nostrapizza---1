@@ -13,7 +13,6 @@ body {
 	background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    overflow-y:  hidden !important;
 }
 
 /*-----------Header--------*/
@@ -21,33 +20,42 @@ body {
 .nav-container {
 	display: flex;
     width: 100%;
-    height: 200px;
+    height: 140px;
     justify-content: center;
     align-items: center;
 }
 .nav-container.navact{
 	height: 140px;
 }
+.navegador{
+	width: 100%;
+	height: 140px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
 .logo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.logo img {
 	position: relative;
     margin: auto;
-    background-image: url(../img/Logo-Nostra-Pizza.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 54%;
-    height: 70%;
+    width: 40%;
+    height: 50%;
     bottom: 3%;
-    left: -1%;
 }
 
 .linea-logo {
-    width: 100%;
-    height: 25%;
+	width: 60%;
+    height: 25px;
     background-color: gray;
     opacity: 0.15;
     position: relative;
-    top: 55%;
+    top: -45px;
 }
 
 .botones {
@@ -155,13 +163,59 @@ body {
     height: 80%;
     display: block;
     justify-content: space-between;
+}
+.especiales {
+    width: 90%;
+    height: 130px;
+    background-image: url(../img/ESPECIALES\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.especialesmenu {
+	width: 100%;
+	height: 80%;
+	position: relative;
+    display: none;
+    overflow-x: hidden;
 	overflow-y: scroll;
 }
-
+.especialesbox {
+	width: 90%;
+    height: 4%;
+    background-image: url(../img/especialesbox.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.3) 6px 5px 10px 1px;
+    position: fixed;
+    left: 5%;
+    z-index: 2;
+}
+.especialesvolver {
+	background-image: url(../img/back.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 20%;
+	height: 60%;
+	margin-right: 10px;
+    float:right;
+    z-index: 1;
+}
 .entradas {
     width: 90%;
     height: 130px;
-    background-image: url(../img/entradas.png);
+    background-image: url(../img/ENTRADAS\ NEW.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,6 +224,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+	margin-top: 10px;
     border-radius: 20px;
 }
 .entradasmenu {
@@ -226,7 +281,7 @@ body {
 }
 .item1box {
 	width: 90%;
-	height: 120px;
+	height: 130px;
 	background-color: white;
 	margin: auto;
 	margin-top: 20px;
@@ -239,7 +294,7 @@ body {
 }
 .item2box {
 	width: 90%;
-	height: 120px;
+	height: 130px;
 	background-color: white;
 	margin: auto;
 	margin-top: 20px;
@@ -312,6 +367,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .item1img {
 	background-image: url(../img/nostropane.jpg);
 	background-size: cover;
@@ -405,21 +461,20 @@ body {
     align-items: center
 }
 .item1text{
-    font-family: "quicksand_light";
+	font-family: "quicksand_Book";
     font-size: 0.7em;
     position: relative;
     width: 90%;
     height: 60%;
-    margin-top: 5px;
     margin-left: 5px;
-	top: 0%;
+    top: 0%;
 }
 .Nostropane{
-	font-family: "quicksand_light";
+	font-family: "quicksand_Book";
     font-size: 0.7em;
-    position: absolute;
+	position: relative;
     width: 50%;
-    height: 10%;
+    height: 70%;
     overflow-wrap: anywhere;
     margin-top: 5px;
     margin-left: 5px;
@@ -429,6 +484,7 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 27%;
+    margin-top: 10px;
 }
 .Nostropane2{
 	font-family: "quicksand_light";
@@ -446,121 +502,11 @@ body {
     justify-content: center;
     top: 23%;
 }
-.item2img {
-	background-image: url(../img/Focaccia.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item3img {
-	background-image: url(../img/Carpaccio\ de\ Bresaola.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item4img {
-	background-image: url(../img/Burrata\ com\ Espargos.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item5img {
-	background-image: url(../img/Bruschetta\ di\ Pomodori.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item6img {
-	background-image: url(../img/Provolone\ Al\ Forno.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item7img {
-	background-image: url(../img/Crostini\ di\ Presunto.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item8img {
-	background-image: url(../img/Involtini\ Di\ Zuchini.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item9img {
-	background-image: url(../img/Crostino\ di\ Salame.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item10img {
-	background-image: url(../img/Alla\ Marianara.JPG);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item11img {
-	background-image: url(../img/Lasagna\ Di\ Carne.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
 
 .saladas {
     width: 90%;
     height: 130px;
-    background-image: url(../img/saladas.png);
+    background-image: url(../img/SALADAS\ NEW.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -605,65 +551,11 @@ body {
     float:right;
     z-index: 1;
 }
-.item12img {
-	background-image: url(../img/Salada\ Nostra.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item13img {
-	background-image: url(../img/Cesare.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item14img {
-	background-image: url(../img/Salada\ Dolce\ Capra.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item15img {
-	background-image: url(../img/Salada\ Rucola\ alla\ Pera.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item16img {
-	background-image: url(../img/Caprese\ e\ Pesto.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
+
 .pizzas {
     width: 90%;
     height: 130px;
-    background-image: url(../img/pizzas.png);
+    background-image: url(../img/PIZZAS\ NEW.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -722,204 +614,7 @@ body {
 .subtitle {
     font-size: 0.6em;
 }
-.item17img {
-	background-image: url(../img/Margherita.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item18img {
-	background-image: url(../img/DOP.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item19img {
-	background-image: url(../img/Prosciutto.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item20img {
-	background-image: url(../img/Prosciutto\ e\ Funghi.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item21img {
-	background-image: url(../img/Viva\ Il\ Formaggio.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item22img {
-	background-image: url(../img/Pizza\ Bufala.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item23img {
-	background-image: url(../img/Línferno.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item24img {
-	background-image: url(../img/Capricciosa.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item99img {
-	background-image: url(../img/Amatriciana.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item25img {
-	background-image: url(../img/4\ Stagioni.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item26img {
-	background-image: url(../img/Nostra.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item27img {
-	background-image: url(../img/Cuoco\ Loco.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item28img {
-	background-image: url(../img/Vegi\ Vita.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item29img {
-	background-image: url(../img/Itália.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item30img {
-	background-image: url(../img/Ventricina.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item31img {
-	background-image: url(../img/Green\ Card.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item32img {
-	background-image: url(../img/Dolce\ Capra.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item33img {
-	background-image: url(../img/Calzone.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
+
 .itemextra {
 	width: 90%;
     height: 50px;
@@ -1024,50 +719,6 @@ body {
     overflow-x: hidden;
 	overflow-y: scroll;
 }
-.item34img {
-	background-image: url(../img/Tiramisu.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item35img {
-	background-image: url(../img/Torta\ al\ Cioccolato.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item36img {
-	background-image: url(../img/Pizza\ di\ Nutella.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item37img {
-	background-image: url(../img/Pizza\ Mela\ e\ Canella.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
 
 .bebidas {
     width: 90%;
@@ -1117,171 +768,7 @@ body {
     overflow-x: hidden;
 	overflow-y: scroll;
 }
-.item38img {
-	background-image: url(../img/Agua\ Penacova.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item39img {
-	background-image: url(../img/Lambrusco\ Rosato.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item40img {
-	background-image: url(../img/Aguas\ das\ Pedras.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item41img {
-	background-image: url(../img/Sumo\ Compal\ Laranja.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item42img {
-	background-image: url(../img/Sumo\ Compal\ Pessego.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item43img {
-	background-image: url(../img/Coca\ Cola.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item44img {
-	background-image: url(../img/Coca\ Cola\ Zero.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item45img {
-	background-image: url(../img/Coca\ Cola\ Light.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item46img {
-	background-image: url(../img/7up.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item47img {
-	background-image: url(../img/Ice\ Tea\ Limao.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item48img {
-	background-image: url(../img/Ide\ Tea\ Pêssego.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item49img {
-	background-image: url(../img/Birra\ Peroni.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item50img {
-	background-image: url(../img/Birra\ Moretti.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item51img {
-	background-image: url(../img/Vinho\ Borgobruno.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item52img {
-	background-image: url(../img/Fanta\ Laranja.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
+
 .vinos {
     width: 90%;
     height: 130px;
@@ -1296,6 +783,13 @@ body {
     align-items: center;
     border-radius: 20px;
 	margin-bottom: 80px;
+}
+.vinos::after {
+	content: '';
+	width: 100%;
+	height: 50px;
+	position: relative;
+	top: 80%;
 }
 .vinosbox {
 	width: 90%;
@@ -1331,71 +825,13 @@ body {
     overflow-x: hidden;
 	overflow-y: scroll;
 }
-.item53img {
-	background-image: url(../img/Vinho\ Esteva.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
+
+.item60img img{
+	width: 11vmax !important;
+	height: 11vmax !important;
     box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
     position: relative;
-    left: 7%;
-}
-.item54img {
-	background-image: url(../img/Lambrusco\ Rosato.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item55img {
-	background-image: url(../img/Vinho\ Borgobruno.png);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item56img {
-	background-image: url(../img/Vinho\ Branco\ Bo.PNG);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item57img {
-	background-image: url(../img/Vinho\ Tinto\ -\ Quinta\ das\ Camelias.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
-}
-.item58img {
-	background-image: url(../img/vinho\ chianti.jpg);
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-	width: 90% !important;
-	height: 75% !important;
-    box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
-    position: relative;
-    left: 7%;
+    left: 8%;
 }
 .footer {
     width: 100%;
@@ -1414,24 +850,62 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
+	justify-content: center;
     text-decoration: none;
     color: black;
 }
 .phone {
-    width: 50%;
+    width: 10%;
     height: 50%;
     background-image: url(../img/phone.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-	display: none;
+}
+.popup1 {
+	display: fixed;
+}
+.popup{
+    width: 90%;
+    height: 50px;
+    display: none;
+    align-items: center;
+    background-color: rgba(221, 221, 221, 0.8);
+    bottom: 6%;
+    left: 200%;
+    position: fixed;
+	z-index: 3;
+	border-radius: 10px;
+}
+.popup.activo{
+	display: flex;
+	transition: 1s;
+	left: 5%;
 }
 .number {
     font-family: "Quicksand_Bold";
     letter-spacing: 2px;
     white-space: nowrap;
-	display: none;
+	margin-right: 20px;
+	text-decoration: none;
+	color: black;
 }
+.numbertext {
+	font-family: "Quicksand_Bold";
+	font-size: .65em;
+}
+arrowF {
+	transition: .5s;
+}
+.arrowF {
+	background-image: url(../img/phone.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50%;
+	height: 50%;
+}
+
 .location {
 	background-image: url(../img/ubicacion.png);
     background-size: contain;
@@ -1443,6 +917,116 @@ body {
     left: 3%;
     bottom: 17%;
 }
+.instagram {
+	background-image: url(../img/instagram.png);
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+	width: 10%;
+	height: 60%;
+	position: absolute;
+	right: 3%;
+}
+.construction {
+	display: none;
+}
+.modal {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: rgba(0, 0,0, 0.8);
+	top: 0%;
+	left: 0%;
+	display: flex;
+	z-index: 4;
+	animation: modal 2s 1s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+.publicidad {
+	background-image: url(../img/Pop-up-Especial_do_mes.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 80%;
+	height: 60%;
+	margin: auto;
+}
+#cerrar {
+	display: none;	
+}
+#cerrar + label {
+	position: absolute;
+	font-family: "quicksand_Bold";
+	font-size: 1.5em;
+	color: white;
+	right: 4%;
+	z-index: 5;
+	top: 2%;
+	animation: modal 2s 1s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+.ful-Img {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0,0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	flex-direction: column;
+}
+.imgText {
+	margin: 20px auto 10px;
+	color: #fff;
+}
+#fullImg {
+	width: 40vh;
+	height: 40vh;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto;
+}
+.ful-Img span{
+	font-family: "quicksand_bold";
+	position: absolute;
+	top: 2%;
+	right: 4%;
+	font-size: 1.5em;
+	color: #fff;
+}
+@keyframes modal {
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+
+}
+#cerrar:checked ~ .botoncerrar, #cerrar:checked ~ .modal{
+	display: none;
+}
+.menu-nav{
+	display: none;
+}
+.home-img{
+	display: none;
+}
+.menu-desk{
+	display: none;
+}
+.galeria{
+	display: none;
+}
+.galeriaIg{
+	display: none;
+}
+.footerD {
+	display: none;
+}
 @media (max-height:800px) {
 	.item2box {
 		margin-bottom: 80px;
@@ -1452,5 +1036,359 @@ body {
 	}
 	item6box{
 		margin-bottom: 90px;
+	}
+}
+@media (min-width:500px) {
+	.especiales{
+		display: none;
+	}
+	.entradas {
+		display: none;
+	}
+	.saladas {
+		display: none;
+	}
+	.sobremesas {
+		display: none;
+	}
+	.pizzas {
+		display: none;
+	}
+	.vinos {
+		display: none;
+	}
+	.bebidas {
+		display: none;
+	}
+	.footer {
+		display: none;
+	}
+	.delivery {
+		display: none;
+	}
+	.menu-container {
+		display: none;
+	}
+	.especialesbox {
+		display: none;
+	}
+	.entradasbox{
+		display: none;
+	}
+	.saladasbox{
+		display: none;
+	}
+	.pizzasbox{
+		display: none;
+	}
+	.sobremesasbox {
+		display: none;
+	}
+	.bebidasbox {
+		display: none;
+	}
+	.vinosbox {
+		display: none;
+	}
+	.itemextra{
+		display: none;
+	}
+	.home-img {
+		background-image: url(../img/Capa_2880x2304.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 60%;
+		overflow-y: hidden;
+		display: block;
+	}
+	.construction {
+		width: 100%;
+		height: 30%;
+		margin-top: 20px;
+		text-align: center;
+		font-size: 2em;
+		display: grid;
+	}
+	.modal {
+		animation: 0;
+	}
+	.linea-logo{ 
+		display: none;
+	}
+	.navegador {
+		width: 100%;
+		height: 70px;
+		background: rgba(150, 148, 143, 0.6);
+		display: flex;
+		z-index: 2;
+	}
+	.logo img{
+		width: 20%;
+		height: 80%;
+		
+	}
+	.menu-nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.menu-nav li {
+		list-style: none;
+	}
+	.menu-nav li a{
+		font-family: "Quicksand_Book";
+		text-decoration: none;
+		color: black;
+		margin-right: 50px;
+		font-size: 1.5em;
+	}
+	.instagram-li{
+		width: 50%;
+		height: 10%;
+		position: relative;
+		top: 3px;
+	}
+	.menu-desk{
+		width: 80%;
+		height: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+	.lista-menu{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.lista-menu li {
+		font-family: "Quicksand_Book";
+		text-decoration: none;
+		list-style: none;
+		color: black;
+		margin-right: 50px;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.especialesmenu{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		overflow-y: hidden;
+		height: 25%;
+	}
+	.entradasmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+		height: 1000px;
+	}
+	.saladasmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+	}
+	.sobremesasmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+	}
+	.bebidasmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+		height: 1415px;
+	}
+	.vinosmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+	}
+	.pizzasmenu{
+		overflow-y: hidden;
+		grid-template-columns: 50% 50%;
+		height: 2000px;
+	}
+	.item2box {
+		width: 85%;
+		height: 130px;
+		background-color: white;
+		margin: auto;
+		margin-top: 20px;
+		top: 7%;
+		box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
+		display: flex;
+		align-items: center;
+		position: relative;
+		justify-content: space-between;
+		margin-bottom: 80px;
+		margin-left: 40px;
+	}
+	.item3box {
+    width: 85%;
+    height: 130px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+	.item1box {
+    width: 85%;
+    height: 130px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin-right: 20px;
+	margin-left: 40px;
+	}
+	.item5box{
+	width: 85%;
+    height: 60px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    top: 7%;
+	margin-left: 40px;
+}
+.item6box {
+    width: 85%;
+    height: 60px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    top: 7%;
+    margin-bottom: 80px;
+	margin-left: 40px;
+}
+
+	.item60img img {
+		width: 80% !important;
+		height: 80% !important;
+		box-shadow: rgb(0 0 0 / 30%) 4px 3px 4px 0px;
+		position: relative;
+		left: 8%;
+	}
+	.item1imgbox {
+		width: 20%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.item1tittle-text {
+		width: 90%;
+		height: 100%;
+		display: grid;
+		align-content: baseline;
+		top: 15%;
+		position: relative;
+	}
+	.item2tittle-text {
+		width: 65%;
+		height: 100%;
+		display: grid;
+		align-content: baseline;
+		top: 15%;
+		position: relative;
+	}
+	.extrasmenu{
+		display: none;
+	}
+	.galeria {
+		width: 100%;
+		height: 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.galeria h1{
+		font-family: "Quicksand_Book";
+	}
+	.galeriaIg{
+		display: inline;
+		width: 100%;
+		height: 500px;
+	}
+	#es-main-widget{
+		height: 100px;
+	}
+	.footerD{
+		width: 100%;
+		height: 80%;
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+	.footerD h1{
+		font-family: "Quicksand_Book";
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.footerDinfo li{
+		list-style: none;
+		font-family: "Quicksand_Book";
+		font-size: 1.5em;
+		font-stretch: expanded;
+	}
+	.googlemapsD{
+		width: 100%;
+		height: 200px;
+	}
+	.footerDml{
+		width: 100%;
+		height: 400px;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+	.numeroDc{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 50px;
+	}
+	.numeroDc img {
+		width: 30px;
+		height: 30px;
+	}
+	.NumeroD {
+		text-align: center;
+		margin-left: 40px;
+		font-weight: bolder;
+		margin-right: 80px;
+	}
+	.NumeroD a {
+		margin-top: 20px;
+	}
+	.horario {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+	}
+	.horario img{
+		width: 30px;
+		height: 30px;
+	}
+	.horario p{
+		text-align: center;
+		margin-left: 40px;
+		font-weight: bolder;
+		margin-top: 20px;
 	}
 }

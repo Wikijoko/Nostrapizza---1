@@ -18,6 +18,7 @@ let menuextras = document.querySelector(".extrasmenu")
 let menusobremesas = document.querySelector(".sobremesasmenu");
 let menubebidas = document.querySelector(".bebidasmenu")
 let menuvinos = document.querySelector(".vinosmenu")
+let extrasmenu = document.querySelector(".extrasmenuD")
 let volverespeciales = document.querySelector(".especialesvolver")
 let volverentradas = document.querySelector(".entradasvolver");
 let volversaladas = document.querySelector(".saladasvolver");
@@ -40,20 +41,27 @@ let sobremesasD = document.querySelector(".sobremesas-desk")
 let bebidasD = document.querySelector(".bebidas-desk")
 let vinosD = document.querySelector(".vinos-desk")
 let extrasD = document.querySelector(".extras-desk")
+let galeria = document.getElementById("galeria")
+let menudesk = document.getElementById("menu-desk")
+let contactoN = document.getElementById("contactoN")
+let galeriaN = document.getElementById("galeriaN")
+let menuN = document.getElementById("menuN")
 
-document.getElementById("menuN").addEventListener('click', scrollDown1)
-document.getElementById("galeriaN").addEventListener('click', scrollDown2)
-document.getElementById("contactoN").addEventListener('click', scrollDown3)
-
-function scrollDown1(){
-    window.scrollTo(0, window.scrollY + 500)
-}
-function scrollDown2(){
-    window.scrollTo(0, window.scrollY + 900)
-}
-function scrollDown3(){
-    window.scrollTo(0, window.scrollY + 2000)
-}
+contactoN.addEventListener('click', () => {
+    document.querySelector('#footerD').scrollIntoView({
+        behavior: 'smooth'
+      });
+})
+galeriaN.addEventListener('click', () => {
+    document.querySelector('#galeria').scrollIntoView({
+        behavior: 'smooth'
+      });
+})
+menuN.addEventListener('click', () => {
+    document.querySelector('#menu-desk').scrollIntoView({
+        behavior: 'smooth'
+      });
+})
 function openImg(reference){
     fullImgBox.style.display="flex";
     fullImg.src = reference;
@@ -148,7 +156,7 @@ function CloseImg(){
         menusaladas.style.display='none'
         menusobremesas.style.display='none'
         menuvinos.style.display='none'
-        menuextras.style.display='none'
+        extrasmenu.style.display='none'
     })
     entradasD.addEventListener('click', () => {
         menuentradas.style.display='grid'
@@ -158,7 +166,7 @@ function CloseImg(){
         menusaladas.style.display='none'
         menusobremesas.style.display='none'
         menuvinos.style.display='none'
-        menuextras.style.display='none'
+        extrasmenu.style.display='none'
     })
     saladasD.addEventListener('click', () => {
         menusaladas.style.display='grid'
@@ -168,7 +176,7 @@ function CloseImg(){
         menuentradas.style.display='none'
         menusobremesas.style.display='none'
         menuvinos.style.display='none'
-        menuextras.style.display='none'
+        extrasmenu.style.display='none'
     })
     pizzasD.addEventListener('click', () => {
         menupizzas.style.display='grid'
@@ -178,10 +186,10 @@ function CloseImg(){
         menusaladas.style.display='none'
         menusobremesas.style.display='none'
         menuvinos.style.display='none'
-        menuextras.style.display='none'
+        extrasmenu.style.display='none'
     })
     extrasD.addEventListener('click', () => {
-        menuextras.style.display='flex'
+        extrasmenu.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
         menubebidas.style.display='none'
@@ -198,7 +206,7 @@ function CloseImg(){
         menusaladas.style.display='none'
         menupizzas.style.display='none'
         menuvinos.style.display='none'
-        menuextras.style.display='none'
+        extrasmenu.style.display='none'
     })
     bebidasD.addEventListener('click', () => {
         menubebidas.style.display='grid'

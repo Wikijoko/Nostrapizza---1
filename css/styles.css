@@ -990,6 +990,10 @@ arrowF {
 	align-items: center;
 	justify-content: center;
 	margin: 10px auto;
+	border-radius: 20px;
+}
+.extrasmenuD {
+	display: none;
 }
 .ful-Img span{
 	font-family: "quicksand_bold";
@@ -1093,6 +1097,9 @@ arrowF {
 	.itemextra{
 		display: none;
 	}
+	.botones{
+		display: none;
+	}
 	.home-img {
 		background-image: url(../img/Capa_2880x2304.jpg);
 		background-position: center;
@@ -1119,9 +1126,9 @@ arrowF {
 	.navegador {
 		width: 100%;
 		height: 70px;
-		background: rgba(150, 148, 143, 0.6);
 		display: flex;
 		z-index: 2;
+		margin-top: 0px;
 	}
 	.logo img{
 		width: 20%;
@@ -1143,19 +1150,23 @@ arrowF {
 		margin-right: 50px;
 		font-size: 1.5em;
 	}
+	.menu-nav li a:hover{
+		cursor: pointer;
+	}
 	.instagram-li{
 		width: 50%;
 		height: 10%;
 		position: relative;
 		top: 3px;
 	}
-	.menu-desk{
+	#menu-desk{
 		width: 80%;
 		height: 20%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: auto;
+		padding-top: 60px;
 	}
 	.lista-menu{
 		display: flex;
@@ -1171,6 +1182,9 @@ arrowF {
 		font-size: 1.2em;
 		text-align: center;
 	}
+	.lista-menu li:hover {
+		cursor: pointer;
+	}
 	.especialesmenu{
 		display: grid;
 		grid-template-columns: 50% 50%;
@@ -1181,99 +1195,109 @@ arrowF {
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
 		height: 1000px;
+		justify-content: space-around;
 	}
 	.saladasmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
+		height: 510px;
+		padding-bottom: 20px;
 	}
 	.sobremesasmenu{
 		overflow-y: hidden;
-		grid-template-columns: 50% 50%;
+    	grid-template-columns: 50% 50%;
+		height: 440px;
+		padding-bottom: 20px;
 	}
 	.bebidasmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
-		height: 1415px;
+		height: 1540px;
+		padding-bottom: 20px;
 	}
 	.vinosmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
+		height: 500px;
+		padding-bottom: 20px;
 	}
 	.pizzasmenu{
 		overflow-y: hidden;
-		grid-template-columns: 50% 50%;
-		height: 2000px;
+    	grid-template-columns: 50% 50%;
+    	height: 1500px;
+    	padding-bottom: 20px;
+	}
+	.extrasmenuD{
+		display: none;
+		overflow-y: hidden;
+    	grid-template-columns: 50% 50%;
+    	height: 1500px;
+    	padding-bottom: 20px;
+	}
+	.item1tittle-price {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		top: 0px;
 	}
 	.item2box {
-		width: 85%;
+		width: 90%;
 		height: 130px;
 		background-color: white;
 		margin: auto;
-		margin-top: 20px;
 		top: 7%;
 		box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
 		display: flex;
 		align-items: center;
 		position: relative;
-		justify-content: space-between;
-		margin-bottom: 80px;
-		margin-left: 40px;
+		justify-content: space-between;	
 	}
 	.item3box {
-    width: 85%;
+    width: 90%;
     height: 130px;
     background-color: white;
     margin: auto;
-    margin-top: 20px;
     box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    margin-right: 40px;
 }
 	.item1box {
-    width: 85%;
+    width: 90%;
     height: 130px;
     background-color: white;
     margin: auto;
-    margin-top: 20px;
     box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    margin-right: 20px;
-	margin-left: 40px;
 	}
 	.item5box{
-	width: 85%;
+	width: 90%;
     height: 60px;
     background-color: white;
     margin: auto;
-    margin-top: 20px;
     box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    top: 7%;
-	margin-left: 40px;
 }
 .item6box {
-    width: 85%;
+    width: 90%;
     height: 60px;
     background-color: white;
     margin: auto;
-    margin-top: 20px;
     box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between;
-    top: 7%;
-    margin-bottom: 80px;
-	margin-left: 40px;
 }
 
 	.item60img img {
@@ -1282,6 +1306,9 @@ arrowF {
 		box-shadow: rgb(0 0 0 / 30%) 4px 3px 4px 0px;
 		position: relative;
 		left: 8%;
+	}
+	.item60img img:hover{
+		cursor: pointer;
 	}
 	.item1imgbox {
 		width: 20%;
@@ -1309,14 +1336,15 @@ arrowF {
 	.extrasmenu{
 		display: none;
 	}
-	.galeria {
+	#galeria {
 		width: 100%;
 		height: 120px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding-top: 60px;
 	}
-	.galeria h1{
+	#galeria h1{
 		font-family: "Quicksand_Book";
 	}
 	.galeriaIg{
@@ -1327,17 +1355,18 @@ arrowF {
 	#es-main-widget{
 		height: 100px;
 	}
-	.footerD{
+	#footerD{
 		width: 100%;
 		height: 80%;
 		display: grid;
 		align-items: center;
 		justify-content: center;
 	}
-	.footerD h1{
+	#footerD h1{
 		font-family: "Quicksand_Book";
 		text-align: center;
 		margin-bottom: 30px;
+		padding-top: 60px;
 	}
 	.footerDinfo li{
 		list-style: none;
@@ -1370,10 +1399,12 @@ arrowF {
 		text-align: center;
 		margin-left: 40px;
 		font-weight: bolder;
-		margin-right: 80px;
 	}
 	.NumeroD a {
 		margin-top: 20px;
+		text-decoration: none;
+		color: black;
+		font-size: 1.2em;
 	}
 	.horario {
 		display: flex;

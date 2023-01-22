@@ -491,7 +491,7 @@ body {
     font-size: 0.7em;
     position: absolute;
     width: 50%;
-    height: 10%;
+    height: 20%;
     overflow-wrap: anywhere;
     margin-top: 5px;
     margin-left: 5px;
@@ -606,10 +606,11 @@ body {
 	font-weight: bolder;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.4em;
     margin-left: 13px;
     z-index: 1;
     margin-top: 3px;
+	white-space: nowrap;
 }
 .subtitle {
     font-size: 0.6em;
@@ -846,13 +847,30 @@ body {
     z-index: 2;
 }
 .footer-box{
-    width: 50%;
+    width: 40%;
     height: 40px;
     display: flex;
     align-items: center;
 	justify-content: center;
     text-decoration: none;
     color: black;
+}
+.pt-lg,.en-lg{
+	margin-right: 20px;
+	font-family: "Quicksand_Book";
+	font-size: 1.5em;
+	color:rgb(72 72 72);
+	text-decoration: none;
+}
+.en-lg::before{
+	content: '';
+    background-color: rgb(72 72 72);
+    height: 70%;
+    width: 2px;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 32.5%;
 }
 .phone {
     width: 10%;
@@ -1022,6 +1040,9 @@ arrowF {
 #cerrar:checked ~ .botoncerrar, #cerrar:checked ~ .modal{
 	display: none;
 }
+#menuTittle h1{
+	display: none;
+}
 .menu-nav{
 	display: none;
 }
@@ -1142,17 +1163,18 @@ arrowF {
 	.logo img{
 		width: 20%;
 		height: 80%;
-		
 	}
 	.menu-nav {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		position: relative;
+		right: 10%;
 	}
 	.menu-nav li {
 		list-style: none;
 	}
-	.menu-nav li a{
+	.home{
 		font-family: "Quicksand_Book";
 		text-decoration: none;
 		color: black;
@@ -1162,11 +1184,33 @@ arrowF {
 	.menu-nav li a:hover{
 		cursor: pointer;
 	}
-	.instagram-li{
-		width: 50%;
-		height: 10%;
-		position: relative;
-		top: 3px;
+	.pt-lg,.en-lg{
+		margin-right: 20px;
+		font-family: "Quicksand_Book";
+		font-size: 1.5em;
+		color:rgb(72 72 72);
+		text-decoration: none;
+	}
+	.pt-lg:hover{
+		color: #adadad;
+		cursor: pointer;
+	}
+	.en-lg:hover{
+		color: #adadad;
+		cursor: pointer;
+	}
+	.en-lg::before{
+		content: '';
+		background-color: rgb(72 72 72);
+		height: 110%;
+		width: 2px;
+		display: flex;
+		position: absolute;
+		right: 60px;
+	}
+	.language{
+		display: flex;
+		width: 100px;
 	}
 	#menu-desk{
 		width: 80%;
@@ -1188,14 +1232,19 @@ arrowF {
 		list-style: none;
 		color: black;
 		margin-right: 50px;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		text-align: center;
 	}
 	.lista-menu li:hover {
 		cursor: pointer;
+		background-color: #C9C9C9;
+		border-radius: 2px;
+		white-space: nowrap;
+	}
+	.especiais-desk.active,.entradas-desk.active,.saladas-desk.active,.pizzas-desk.active,.sobremesas-desk.active,.extras-desk.active,.bebidas-desk.active,.vinos-desk.active{
+		background-color: #adadad;
 	}
 	.especialesmenu{
-		display: grid;
 		grid-template-columns: 50% 50%;
 		overflow-y: hidden;
 		height: 25%;
@@ -1215,7 +1264,7 @@ arrowF {
 	.sobremesasmenu{
 		overflow-y: hidden;
     	grid-template-columns: 50% 50%;
-		height: 440px;
+		height: 350px;
 		padding-bottom: 20px;
 	}
 	.bebidasmenu{
@@ -1231,6 +1280,7 @@ arrowF {
 		padding-bottom: 20px;
 	}
 	.pizzasmenu{
+		display: grid;
 		overflow-y: hidden;
     	grid-template-columns: 50% 50%;
     	height: 1500px;
@@ -1318,6 +1368,7 @@ arrowF {
 	}
 	.item60img img:hover{
 		cursor: pointer;
+		box-shadow: rgb(0 0 0 / 30%) 4px 3px 4px 5px;
 	}
 	.item1imgbox {
 		width: 20%;
@@ -1352,6 +1403,17 @@ arrowF {
 		justify-content: center;
 		align-items: center;
 		padding-top: 60px;
+		text-transform: uppercase;
+	}
+	#menuTittle h1{
+		font-family: "Quicksand_Book";
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		padding-top: 60px;
+		text-transform: uppercase;
 	}
 	#galeria h1{
 		font-family: "Quicksand_Book";
@@ -1376,6 +1438,7 @@ arrowF {
 		text-align: center;
 		margin-bottom: 30px;
 		padding-top: 60px;
+		text-transform: uppercase;
 	}
 	.footerDinfo li{
 		list-style: none;
@@ -1398,7 +1461,6 @@ arrowF {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 50px;
 	}
 	.numeroDc img {
 		width: 30px;
@@ -1417,7 +1479,7 @@ arrowF {
 	}
 	.horario {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		margin-top: 50px;
 	}
@@ -1430,5 +1492,15 @@ arrowF {
 		margin-left: 40px;
 		font-weight: bolder;
 		margin-top: 20px;
+	}
+	.horario a{
+		text-align: center;
+		margin-right: 50px;
+		font-weight: bolder;
+	}
+	.instagramC{
+		text-align: center;
+		margin-right: 50px;
+		font-weight: bolder;
 	}
 }

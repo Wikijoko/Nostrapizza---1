@@ -1,3 +1,4 @@
+
 let delivery1 = document.querySelector(".delivery-container");
 let deliveryboton = document.querySelector(".delivery");
 let nav = document.querySelector(".nav-container");
@@ -94,3 +95,8 @@ let volvervinos = document.querySelector(".vinosvolver")
     nav.style.height="200px";
     menu.style.display="block"
     })
+import {textfit} from "https://cdnjs.cloudflare.com/ajax/libs/textfit/2.4.0/textFit.min.js";
+        textfit(document.getElementsByClassName('item1text'), {
+            maxFontSize: 120
+        });
+   

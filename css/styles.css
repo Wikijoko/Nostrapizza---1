@@ -1061,6 +1061,9 @@ arrowF {
 .footerD {
 	display: none;
 }
+.language{
+	display: none;
+}
 @media (max-height:800px) {
 	.item2box {
 		margin-bottom: 80px;
@@ -1131,7 +1134,7 @@ arrowF {
 		display: none;
 	}
 	.home-img {
-		background-image: url(../img/Capa_2880x2304.jpg);
+		background-image: url(../img/esta\ -DSC05202.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1160,6 +1163,15 @@ arrowF {
 		z-index: 2;
 		margin-top: 0px;
 	}
+	.logo{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		left: -15%;
+	}
 	.logo img{
 		width: 20%;
 		height: 80%;
@@ -1169,7 +1181,7 @@ arrowF {
 		justify-content: space-around;
 		align-items: center;
 		position: relative;
-		right: 10%;
+		right: 20%;
 	}
 	.menu-nav li {
 		list-style: none;
@@ -1202,10 +1214,11 @@ arrowF {
 	.en-lg::before{
 		content: '';
 		background-color: rgb(72 72 72);
-		height: 110%;
+		height: 4%;
 		width: 2px;
 		display: flex;
 		position: absolute;
+		top: 55px;
 		right: 60px;
 	}
 	.language{
@@ -1236,13 +1249,13 @@ arrowF {
 		text-align: center;
 	}
 	.lista-menu li:hover {
+		color: #adadad;
 		cursor: pointer;
-		background-color: #C9C9C9;
 		border-radius: 2px;
 		white-space: nowrap;
 	}
 	.especiais-desk.active,.entradas-desk.active,.saladas-desk.active,.pizzas-desk.active,.sobremesas-desk.active,.extras-desk.active,.bebidas-desk.active,.vinos-desk.active{
-		background-color: #adadad;
+		font-size: 1.4em;
 	}
 	.especialesmenu{
 		grid-template-columns: 50% 50%;
@@ -1406,17 +1419,28 @@ arrowF {
 		text-transform: uppercase;
 	}
 	#menuTittle h1{
-		font-family: "Quicksand_Book";
+		font-family: "ReklameScript";
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100px;
+		font-weight: 100;
+		letter-spacing: 2px;
+		height: 20px;
 		padding-top: 60px;
 		text-transform: uppercase;
 	}
 	#galeria h1{
-		font-family: "Quicksand_Book";
+		font-family: "ReklameScript";
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 100;
+		letter-spacing: 2px;
+		height: 20px;
+		padding-top: 0px;
+		text-transform: uppercase;
 	}
 	.galeriaIg{
 		display: inline;
@@ -1428,16 +1452,22 @@ arrowF {
 	}
 	#footerD{
 		width: 100%;
-		height: 80%;
-		display: grid;
-		align-items: center;
-		justify-content: center;
+    height: 80%;
+    display: grid;
+    grid-auto-columns: 800px;
+    align-items: center;
+    justify-content: center;
 	}
 	#footerD h1{
-		font-family: "Quicksand_Book";
-		text-align: center;
-		margin-bottom: 30px;
-		padding-top: 60px;
+		font-family: "ReklameScript";
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 100;
+		letter-spacing: 2px;
+		height: 20px;
+		padding-top: 0px;
 		text-transform: uppercase;
 	}
 	.footerDinfo li{
@@ -1446,9 +1476,14 @@ arrowF {
 		font-size: 1.5em;
 		font-stretch: expanded;
 	}
+	.footerDinfo {
+		width: 400px;
+	}
 	.googlemapsD{
-		width: 100%;
-		height: 200px;
+		width: 50%;
+		height: 300px;
+		margin-right: 30px;
+		margin-top: 20px;
 	}
 	.footerDml{
 		width: 100%;
@@ -1468,7 +1503,7 @@ arrowF {
 	}
 	.NumeroD {
 		text-align: center;
-		margin-left: 40px;
+		margin:auto;
 		font-weight: bolder;
 	}
 	.NumeroD a {
@@ -1489,18 +1524,25 @@ arrowF {
 	}
 	.horario p{
 		text-align: center;
-		margin-left: 40px;
+		margin: auto;
 		font-weight: bolder;
-		margin-top: 20px;
-	}
-	.horario a{
-		text-align: center;
-		margin-right: 50px;
-		font-weight: bolder;
+		
 	}
 	.instagramC{
 		text-align: center;
-		margin-right: 50px;
+		margin:auto;
 		font-weight: bolder;
+		text-decoration: none;
+		color: black;
+	}
+	.contactoD{
+		text-align: center;
+		margin:auto;
+		font-weight: bolder;
+		text-decoration: none;
+		color: black;
+	}
+	.contactoD:hover,.instagramC:hover,.NumeroD a:hover{
+		color: #adadad;
 	}
 }

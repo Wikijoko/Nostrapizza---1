@@ -1133,15 +1133,19 @@ arrowF {
 	.botones{
 		display: none;
 	}
-	.home-img {
-		background-image: url(../img/esta\ -DSC05202.jpg);
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 60%;
-		overflow-y: hidden;
-		display: block;
+	.nav-container{
+		height: 600px;
 	}
+	,
+	.item1box {
+		display: none;
+	}
+	
+.imgFondo{
+	position: absolute;
+	width: 100%;
+	top: 0%;
+}
 	.construction {
 		width: 100%;
 		height: 30%;
@@ -1160,17 +1164,15 @@ arrowF {
 		width: 100%;
 		height: 70px;
 		display: flex;
-		z-index: 2;
-		margin-top: 0px;
-	}
-	.logo{
-		width: 100%;
-		display: flex;
+		z-index: 0;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
-		position: relative;
-		left: -15%;
+		margin-top: 0px;
+		position: absolute;
+		top: 0%;
+	}
+	.logo{
+		display: none;
 	}
 	.logo img{
 		width: 20%;
@@ -1181,17 +1183,15 @@ arrowF {
 		justify-content: space-around;
 		align-items: center;
 		position: relative;
-		right: 20%;
+		top: 50%;
 	}
 	.menu-nav li {
 		list-style: none;
+		margin-right: 20px;
+		margin-left: 20px;
 	}
-	.home{
-		font-family: "Quicksand_Book";
-		text-decoration: none;
-		color: black;
-		margin-right: 50px;
-		font-size: 1.5em;
+	.home img{
+		margin-top: 40px;
 	}
 	.menu-nav li a:hover{
 		cursor: pointer;
@@ -1222,8 +1222,9 @@ arrowF {
 		right: 60px;
 	}
 	.language{
-		display: flex;
+		display: none;
 		width: 100px;
+		position: absolute;
 	}
 	#menu-desk{
 		width: 80%;
@@ -1442,42 +1443,33 @@ arrowF {
 		padding-top: 0px;
 		text-transform: uppercase;
 	}
-	.galeriaIg{
-		display: inline;
+	.galeriaIg {
+		display: block;
 		width: 100%;
-		height: 500px;
+		height: 620px;
+		background-image: url(../img/nw3_2.png);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 	#es-main-widget{
 		height: 100px;
 	}
 	#footerD{
 		width: 100%;
-    height: 80%;
-    display: grid;
-    grid-auto-columns: 800px;
-    align-items: center;
-    justify-content: center;
+		height: 90%;
+		display: block;
+		grid-auto-columns: 800px;
+		align-items: center;
+		justify-content: center;
+		background-image: url(../img/nw4_1.png);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
-	#footerD h1{
-		font-family: "ReklameScript";
-		width: 100%;
+	.imageContact{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-weight: 100;
-		letter-spacing: 2px;
-		height: 20px;
-		padding-top: 0px;
-		text-transform: uppercase;
-	}
-	.footerDinfo li{
-		list-style: none;
-		font-family: "Quicksand_Book";
-		font-size: 1.5em;
-		font-stretch: expanded;
-	}
-	.footerDinfo {
-		width: 400px;
+		padding-top: 50px;
 	}
 	.googlemapsD{
 		width: 50%;
@@ -1486,66 +1478,63 @@ arrowF {
 		margin-top: 20px;
 	}
 	.footerDml{
-		width: 100%;
-		height: 400px;
+		width: 60%;
+		height: 200px;
 		display: flex;
 		justify-content: space-around;
-		align-items: flex-start;
-		background: white;
-		padding: 20px 20px 0px 20px;
-		box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-	}
-	.numeroDc{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.numeroDc img {
-		width: 30px;
-		height: 30px;
-	}
-	.NumeroD {
-		text-align: center;
-		margin:auto;
-		font-weight: bolder;
-	}
-	.NumeroD a {
-		margin-top: 20px;
-		text-decoration: none;
-		color: black;
-		font-size: 1.2em;
-	}
-	.horario {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		margin: auto;
 		margin-top: 50px;
 	}
-	.horario img{
-		width: 30px;
-		height: 30px;
+	.localizacion{
+		display: block;
 	}
-	.horario p{
-		text-align: center;
-		margin: auto;
-		font-weight: bolder;
-		
+	.imagenF::after{
+		content: url(../img/BARRA\ EN\ PT.png);
+		position: relative;
+		left: 45%;
 	}
-	.instagramC{
+	.imagenF {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.FooterText {
+		display: block;
+	}
+	.FooterText p{
+		font-family: "Quicksand_Book";
 		text-align: center;
-		margin:auto;
-		font-weight: bolder;
+		color: rgb(255, 249, 249);
+		margin-top: 20px;
+		font-size: 0.7em;
+	}
+	.FooterText a{
+		font-family: "Quicksand_Book";
 		text-decoration: none;
-		color: black;
+		display: flex;
+		color: rgb(229, 138, 53);
+		width: 100%;
+		height: 40px;
+		align-items: center;
+		justify-content: center;
+		font-size: 1em;
+		text-shadow: 0px 6px 10px black;
 	}
-	.contactoD{
-		text-align: center;
-		margin:auto;
-		font-weight: bolder;
-		text-decoration: none;
-		color: black;
+	.googlemaps{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 300px;
+		margin-top: 30px;
 	}
+	.googlemaps iframe{
+		box-shadow: 0px 4px 20px black;
+	}
+	
 	.contactoD:hover,.instagramC:hover,.NumeroD a:hover{
 		color: #adadad;
+	}
+	.item1box, .item2box, .item3box, .item4box{
+		display: none;
 	}
 }

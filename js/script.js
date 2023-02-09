@@ -42,10 +42,11 @@ let bebidasD = document.querySelector(".bebidas-desk")
 let vinosD = document.querySelector(".vinos-desk")
 let extrasD = document.querySelector(".extras-desk")
 let galeria = document.getElementById("galeria")
-let menudesk = document.getElementById("menu-desk")
+let menudesk = document.getElementById("menuTittle")
 let contactoN = document.getElementById("contactoN")
 let galeriaN = document.getElementById("galeriaN")
 let menuN = document.getElementById("menuN")
+
 
 contactoN.addEventListener('click', () => {
     document.querySelector('#footerD').scrollIntoView({
@@ -58,7 +59,7 @@ galeriaN.addEventListener('click', () => {
       });
 })
 menuN.addEventListener('click', () => {
-    document.querySelector('#menu-desk').scrollIntoView({
+    document.querySelector('#menuTittle').scrollIntoView({
         behavior: 'smooth'
       });
 })
@@ -149,6 +150,14 @@ function CloseImg(){
 
     
     especialesD.addEventListener('click', () => {
+        especialesD.classList.add('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         menuespeciales.style.display='grid'
         menuentradas.style.display='none'
         menupizzas.style.display='none'
@@ -159,6 +168,14 @@ function CloseImg(){
         extrasmenu.style.display='none'
     })
     entradasD.addEventListener('click', () => {
+        entradasD.classList.add('active')
+        especialesD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         menuentradas.style.display='grid'
         menuespeciales.style.display='none'
         menupizzas.style.display='none'
@@ -169,6 +186,14 @@ function CloseImg(){
         extrasmenu.style.display='none'
     })
     saladasD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.add('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         menusaladas.style.display='grid'
         menuespeciales.style.display='none'
         menupizzas.style.display='none'
@@ -179,6 +204,14 @@ function CloseImg(){
         extrasmenu.style.display='none'
     })
     pizzasD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.add('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         menupizzas.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
@@ -189,6 +222,14 @@ function CloseImg(){
         extrasmenu.style.display='none'
     })
     extrasD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.add('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         extrasmenu.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
@@ -199,6 +240,14 @@ function CloseImg(){
         menupizzas.style.display='none'
     })
     sobremesasD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.add('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.remove('active')
         menusobremesas.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
@@ -209,6 +258,14 @@ function CloseImg(){
         extrasmenu.style.display='none'
     })
     bebidasD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.add('active')
+        vinosD.classList.remove('active')
         menubebidas.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
@@ -219,6 +276,14 @@ function CloseImg(){
         menuextras.style.display='none'
     })
     vinosD.addEventListener('click', () => {
+        especialesD.classList.remove('active')
+        entradasD.classList.remove('active')
+        saladasD.classList.remove('active')
+        pizzasD.classList.remove('active')
+        sobremesasD.classList.remove('active')
+        extrasD.classList.remove('active')
+        bebidasD.classList.remove('active')
+        vinosD.classList.add('active')
         menuvinos.style.display='grid'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'

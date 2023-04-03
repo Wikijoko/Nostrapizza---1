@@ -828,8 +828,8 @@ body {
 }
 
 .item60img img{
-	width: 11vmax !important;
-	height: 11vmax !important;
+	width: 11vmax;
+	height: 11vmax;
     box-shadow: rgba(0,0,0,0.3) 4px 3px 4px 0px;
     position: relative;
     left: 8%;
@@ -1134,16 +1134,19 @@ arrowF {
 		display: none;
 	}
 	.nav-container{
-		height: 600px;
+		height: 100%;
 	}
-	,
+	
 	.item1box {
+		display: none;
+	}
+	.Nostropane, .Nostropane2 {
 		display: none;
 	}
 	
 .imgFondo{
-	position: absolute;
 	width: 100%;
+	height: 100%;
 	top: 0%;
 }
 	.construction {
@@ -1192,6 +1195,12 @@ arrowF {
 	}
 	.home img{
 		margin-top: 40px;
+		width: 100%;
+		height: 100%;
+	}
+	.home1 img{
+		width: 100%;
+		height: 100%;
 	}
 	.menu-nav li a:hover{
 		cursor: pointer;
@@ -1233,7 +1242,6 @@ arrowF {
 		justify-content: center;
 		align-items: center;
 		margin: auto;
-		padding-top: 60px;
 	}
 	.lista-menu{
 		display: flex;
@@ -1261,151 +1269,75 @@ arrowF {
 	.especialesmenu{
 		grid-template-columns: 50% 50%;
 		overflow-y: hidden;
-		height: 25%;
+		height: unset;
 	}
 	.entradasmenu{
 		overflow-y: hidden;
+		width: 100%;
 		grid-template-columns: 50% 50%;
-		height: 1000px;
-		justify-content: space-around;
+		height: unset;
+		justify-content: space-between;
+		overflow-x: hidden;
+	}
+	.entradasmenucontainer, .saladasmenucontainer {
+		display: flex;
+		margin-left: -30%;
+		transition-property: all;
+		transition-duration: .5s;
+	}
+	.saladasmenucontainer{
+		margin-left: 0%;
+	}
+	.pizzamenucontainer {
+		display: flex;
+		margin-left: -27%;
+	}
+	.bebidasmenucontainer {
+		display: flex;
+		margin-left: -22.6%;
+	}
+	.vinosmenucontainer {
+		display: flex;
+		margin-left: -28%;
+		transition: all 0.3s;
 	}
 	.saladasmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
-		height: 510px;
+		height: unset;
 		padding-bottom: 20px;
 	}
 	.sobremesasmenu{
 		overflow-y: hidden;
     	grid-template-columns: 50% 50%;
-		height: 350px;
+		height: unset;
 		padding-bottom: 20px;
 	}
 	.bebidasmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
-		height: 1540px;
+		height: unset;
 		padding-bottom: 20px;
 	}
 	.vinosmenu{
 		overflow-y: hidden;
 		grid-template-columns: 50% 50%;
-		height: 500px;
+		height: unset;
 		padding-bottom: 20px;
 	}
 	.pizzasmenu{
-		display: grid;
+		display: flex;
 		overflow-y: hidden;
     	grid-template-columns: 50% 50%;
-    	height: 1500px;
+    	height: unset;
     	padding-bottom: 20px;
 	}
 	.extrasmenuD{
 		display: none;
 		overflow-y: hidden;
     	grid-template-columns: 50% 50%;
-    	height: 1500px;
+    	height: unset;
     	padding-bottom: 20px;
-	}
-	.item1tittle-price {
-		display: flex;
-		width: 100%;
-		height: 100%;
-		align-items: center;
-		justify-content: space-between;
-		position: relative;
-		top: 0px;
-	}
-	.item2box {
-		width: 90%;
-		height: 130px;
-		background-color: white;
-		margin: auto;
-		top: 7%;
-		box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-		display: flex;
-		align-items: center;
-		position: relative;
-		justify-content: space-between;	
-	}
-	.item3box {
-    width: 90%;
-    height: 130px;
-    background-color: white;
-    margin: auto;
-    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-}
-	.item1box {
-    width: 90%;
-    height: 130px;
-    background-color: white;
-    margin: auto;
-    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-	}
-	.item5box{
-	width: 90%;
-    height: 60px;
-    background-color: white;
-    margin: auto;
-    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-}
-.item6box {
-    width: 90%;
-    height: 60px;
-    background-color: white;
-    margin: auto;
-    box-shadow: rgb(0 0 0 / 20%) 6px 5px 10px 1px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-}
-
-	.item60img img {
-		width: 80% !important;
-		height: 80% !important;
-		box-shadow: rgb(0 0 0 / 30%) 4px 3px 4px 0px;
-		position: relative;
-		left: 8%;
-	}
-	.item60img img:hover{
-		cursor: pointer;
-		box-shadow: rgb(0 0 0 / 30%) 4px 3px 4px 5px;
-	}
-	.item1imgbox {
-		width: 20%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	.item1tittle-text {
-		width: 90%;
-		height: 100%;
-		display: grid;
-		align-content: baseline;
-		top: 15%;
-		position: relative;
-	}
-	.item2tittle-text {
-		width: 65%;
-		height: 100%;
-		display: grid;
-		align-content: baseline;
-		top: 15%;
-		position: relative;
 	}
 	.extrasmenu{
 		display: none;
@@ -1534,7 +1466,143 @@ arrowF {
 	.contactoD:hover,.instagramC:hover,.NumeroD a:hover{
 		color: #adadad;
 	}
-	.item1box, .item2box, .item3box, .item4box{
+	.item1box, .item3box, .item1imgbox, .item60img, .item1tittle-text, .item2tittle-text, .item1tittle-price, .item1text, price{
+		all: unset;
+	}
+	.item1boxe, .item3box{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.item3box{
+		margin: 0;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.item1boxs{
+		margin-left: 4%;
+    	margin-right: 5%;
+	}
+	.item1boxb {
+		margin-left: 1%;
+		margin-right: 1.4%;
+	}
+	.item1boxv{
+		margin-left: 2%;
+		margin-right: 5%;
+	}
+	.item1text {
 		display: none;
+	}
+	.item60img img{
+		height: 18vmax;
+		width: 20vmax;
+		left: 0;
+		border-radius: 20px;
+	}
+	.item1tittle-text, .item2tittle-text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-radius: 30px;
+		height: 30%;
+		position: relative;
+		bottom: 20%;
+		left: 10%;
+		box-shadow: 4px 9px 19px -11px;
+		background-color: white;
+	}
+	.item1tittle-price {
+		display: block;
+	}
+	.item1tittle{
+		margin-bottom: 20px;
+		font-size: 1.3em;
+	}
+	.item1tittle-price  .item1price {
+		font-size: 1em;
+		color: orangered;
+	}
+	.details {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand_bold";
+    background-color: orangered;
+    color: white;
+    width: 60%;
+    left: 10%;
+    border-radius: 20px;
+    font-size: 1.1em;
+    margin: auto;
+    text-transform: uppercase;
+    position: relative;
+    top: -23%;
+	}
+	.price {
+		display: none;
+	}
+	.priceD{
+		display: flex;
+	}
+	.leftarrow, .rightarrow, .leftarrows, .rightarrows, .leftarrowp, .rightarrowp, .leftarrowb, .rightarrowb, .leftarrowv, .rightarrowv{
+		position: absolute;
+		width: 3vw;
+		z-index: 1;
+		display: flex;
+		top: 40%;
+	}
+	.leftarrow, .leftarrows, .leftarrowp, .leftarrowb, .leftarrowv{
+		left: 1%;
+	}
+	.rightarrow, .rightarrows, .rightarrowp, .rightarrowb, .rightarrowv{
+		right: 0%;
+	}
+	.leftarrow img, .rightarrow img, .leftarrows img, .rightarrows img, .leftarrowp img, .rightarrowp img, .leftarrowb img, .rightarrowb img, .leftarrowv img, .rightarrowv img{
+		object-fit: contain;
+		width: 100%;
+
+	}
+	.item2tittle-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		border-radius: 30px;
+		height: 30%;
+		position: relative;
+		bottom: 20%;
+		left: 10%;
+		box-shadow: 4px 9px 19px -11px;
+		background-color: white;
+		flex-direction: column;
+	}
+	.item1price {
+		position: relative;
+		font-family: "quicksand_bold";
+		font-size: 1em;
+		font-weight: bolder;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		margin-right: 0%;
+	}
+	.classicprice {
+		margin-right: 20px;
+	}
+	.romanaprice {
+		margin-left: 20px;
+	}
+	.flechitas {
+		display: flex;
+		position: absolute;
+		justify-content: space-between;
+		width: 100%;
+		justify-items: self-end;
+		width: 100%;
+		height: 80%;
 	}
 }

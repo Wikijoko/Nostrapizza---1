@@ -158,7 +158,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.remove('active')
-        menuespeciales.style.display='grid'
+        menuespeciales.style.display='flex'
         menuentradas.style.display='none'
         menupizzas.style.display='none'
         menubebidas.style.display='none'
@@ -176,7 +176,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.remove('active')
-        menuentradas.style.display='grid'
+        menuentradas.style.display='flex'
         menuespeciales.style.display='none'
         menupizzas.style.display='none'
         menubebidas.style.display='none'
@@ -194,7 +194,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.remove('active')
-        menusaladas.style.display='grid'
+        menusaladas.style.display='flex'
         menuespeciales.style.display='none'
         menupizzas.style.display='none'
         menubebidas.style.display='none'
@@ -212,7 +212,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.remove('active')
-        menupizzas.style.display='grid'
+        menupizzas.style.display='flex'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
         menubebidas.style.display='none'
@@ -248,7 +248,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.remove('active')
-        menusobremesas.style.display='grid'
+        menusobremesas.style.display='flex'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
         menubebidas.style.display='none'
@@ -266,7 +266,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.add('active')
         vinosD.classList.remove('active')
-        menubebidas.style.display='grid'
+        menubebidas.style.display='flex'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
         menupizzas.style.display='none'
@@ -284,7 +284,7 @@ function CloseImg(){
         extrasD.classList.remove('active')
         bebidasD.classList.remove('active')
         vinosD.classList.add('active')
-        menuvinos.style.display='grid'
+        menuvinos.style.display='flex'
         menuespeciales.style.display='none'
         menuentradas.style.display='none'
         menubebidas.style.display='none'
@@ -293,3 +293,145 @@ function CloseImg(){
         menupizzas.style.display='none'
         menuextras.style.display='none'
     })
+
+
+    const slidere = document.querySelector(".entradasmenucontainer");
+    const sliders = document.querySelector(".saladasmenucontainer");
+    const sliderp = document.querySelector(".pizzamenucontainer");
+    const sliderb = document.querySelector(".bebidasmenucontainer");
+    const sliderv = document.querySelector(".vinosmenucontainer");
+    let slidersectione = document.querySelectorAll(".item1boxe");
+    let slidersections = document.querySelectorAll(".item1boxs");
+    let slidersectionp = document.querySelectorAll(".item3box");
+    let slidersectionb = document.querySelectorAll(".item1boxb");
+    let slidersectionv = document.querySelectorAll(".item1boxv");
+    let slidersectionLaste = slidersectione[slidersectione.length -1];
+    let slidersectionLasts = slidersections[slidersections.length -1];
+    let slidersectionLastp = slidersectionp[slidersectionp.length -1];
+    let slidersectionLastb = slidersectionb[slidersectionb.length -1];
+    let slidersectionLastv = slidersectionv[slidersectionv.length -1];
+
+    const btnlefte = document.querySelector(".leftarrow");
+    const btnrighte = document.querySelector(".rightarrow");
+    const btnlefts = document.querySelector(".leftarrows");
+    const btnrights = document.querySelector(".rightarrows");
+    const btnleftp = document.querySelector(".leftarrowp");
+    const btnrightp = document.querySelector(".rightarrowp");
+    const btnleftb = document.querySelector(".leftarrowb");
+    const btnrightb = document.querySelector(".rightarrowb");
+    const btnleftv = document.querySelector(".leftarrowv");
+    const btnrightv = document.querySelector(".rightarrowv");
+    
+    slidere.insertAdjacentElement("afterbegin", slidersectionLaste);
+    sliders.insertAdjacentElement("afterbegin", slidersectionLasts);
+    sliderp.insertAdjacentElement("afterbegin", slidersectionLastp);
+    sliderb.insertAdjacentElement("afterbegin", slidersectionLastb);
+    sliderv.insertAdjacentElement("afterbegin", slidersectionLastv);
+
+    function moverderechae() {
+        let slidersectionFirste = document.querySelectorAll(".item1boxe") [0]
+        slidere.style.marginleft = "-200%";
+        slidere.style.transition = "all .3s";
+        let slidersectionFirsts = document.querySelectorAll(".item1boxs") [0]
+        sliders.style.marginleft = "-200%";
+        sliders.style.transition = "all .3s";
+        let slidersectionFirstp = document.querySelectorAll(".item3box") [0]
+        sliderp.style.marginleft = "-200%";
+        sliderp.style.transition = "all .3s";
+        let slidersectionFirstb = document.querySelectorAll(".item1boxb") [0]
+        sliderb.style.marginleft = "-200%";
+        sliderb.style.transition = "all .3s";
+        let slidersectionFirstv = document.querySelectorAll(".item1boxv") [0]
+        sliderv.style.marginleft = "-200%";
+        
+        setTimeout(function(){
+            slidere.style.transition = "none";
+            slidere.insertAdjacentElement('beforeend', slidersectionFirste);
+            slidere.style.marginleft = "-100%";
+            sliders.style.transition = "none";
+            sliders.insertAdjacentElement('beforeend', slidersectionFirsts);
+            sliders.style.marginleft = "-100%";
+            sliderp.style.transition = "none";
+            sliderp.insertAdjacentElement('beforeend', slidersectionFirstp);
+            sliderp.style.marginleft = "-100%";
+            sliderb.style.transition = "none";
+            sliderb.insertAdjacentElement('beforeend', slidersectionFirstb);
+            sliderb.style.marginleft = "-100%";
+            
+            sliderv.insertAdjacentElement('beforeend', slidersectionFirstv);
+            sliderv.style.marginleft = "-100%";
+        }, 300);
+    }
+    function moverizquierdae() {
+        let slidersectione = document.querySelectorAll(".item1boxe")
+        let slidersectionLaste = slidersectione[slidersectione.length -1];
+        slidere.style.marginleft = "0";
+        slidere.style.transitionproperty = "all";
+        slidere.style.transitionduration = "0.3s";
+        let slidersections = document.querySelectorAll(".item1boxs")
+        let slidersectionLasts = slidersections[slidersections.length -1];
+        sliders.style.marginleft = "0";
+        sliders.style.transitionproperty = "all";
+        sliders.style.transitionduration = "0.3s";
+        let slidersectionp = document.querySelectorAll(".item3box")
+        let slidersectionLastp = slidersectionp[slidersectionp.length -1];
+        sliderp.style.marginleft = "0";
+        sliderp.style.transitionproperty = "all";
+        sliderp.style.transitionduration = "0.3s";
+        let slidersectionb = document.querySelectorAll(".item1boxb")
+        let slidersectionLastb = slidersectionb[slidersectionb.length -1];
+        sliderb.style.marginleft = "0";
+        sliderb.style.transitionproperty = "all";
+        sliderb.style.transitionduration = "0.3s";
+        let slidersectionv = document.querySelectorAll(".item1boxv")
+        let slidersectionLastv = slidersectionv[slidersectionv.length -1];
+        sliderv.style.marginleft = "0";
+        sliderv.style.transitionproperty = "all";
+        sliderv.style.transitionduration = "0.3s";
+        setTimeout(function(){
+            slidere.insertAdjacentElement('afterBegin', slidersectionLaste);
+            slidere.style.marginleft = "-100%";
+            sliders.insertAdjacentElement('afterBegin', slidersectionLasts);
+            sliders.style.marginleft = "-100%";
+            sliderp.insertAdjacentElement('afterBegin', slidersectionLastp);
+            sliderp.style.marginleft = "-100%";
+            sliderb.insertAdjacentElement('afterBegin', slidersectionLastb);
+            sliderb.style.marginleft = "-100%";
+            sliderv.insertAdjacentElement('afterBegin', slidersectionLastv);
+            sliderv.style.marginleft = "-100%";
+        }, 300);
+    }
+    btnrighte.addEventListener('click', function(){
+        moverderechae();
+    });
+    btnrights.addEventListener('click', function(){
+        moverderechae();
+    });
+    btnrightp.addEventListener('click', function(){
+        moverderechae();
+    });
+    btnrightb.addEventListener('click', function(){
+        moverderechae();
+    });
+    btnrightv.addEventListener('click', function(){
+        moverderechae();
+    });
+    btnlefte.addEventListener('click', function(){
+        moverizquierdae();
+    });
+    btnlefts.addEventListener('click', function(){
+        moverizquierdae();
+    });
+    btnleftp.addEventListener('click', function(){
+        moverizquierdae();
+    });
+    btnleftb.addEventListener('click', function(){
+        moverizquierdae();
+    });
+    btnleftv.addEventListener('click', function(){
+        moverizquierdae();
+    });
+    
+
+
+ 
